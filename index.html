@@ -1,0 +1,18 @@
+def calculer_points(matchs_gagnes, points_par_match=10):
+    """
+    Calcule les points totaux en fonction du nombre de matchs gagnés.
+
+    Args:
+        matchs_gagnes (int): Le nombre de matchs gagnés par le joueur.
+        points_par_match (int): Le nombre de points attribués par match gagné (par défaut: 10).
+
+    Returns:
+        int: Le nombre total de points du joueur.
+    """
+    points_totaux = matchs_gagnes * points_par_match
+    return points_totaux
+
+# Exemple d'utilisation
+matchs_gagnes = 5
+points = calculer_points(matchs_gagnes)
+print(f"Le joueur a gagné {matchs_gagnes} matchs et a donc {points} points.")
